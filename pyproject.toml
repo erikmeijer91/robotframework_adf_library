@@ -1,6 +1,6 @@
 [project]
 name = "robotframework_adf_library"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Erik Meijer", email="erik_meijer_14@hotmail.com" },
 ]
