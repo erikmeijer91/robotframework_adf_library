@@ -1,6 +1,9 @@
 name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -58,7 +61,6 @@ jobs:
   publish-to-pypi:
     name: >-
       Publish Python 🐍 distribution 📦 to PyPI
-    if: startsWith(github.ref, 'refs/heads/main')  # only publish to PyPI on tag pushes
     needs:
     - publish-to-testpypi
     runs-on: ubuntu-latest
